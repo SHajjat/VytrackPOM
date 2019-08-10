@@ -1,0 +1,6 @@
+1  dina
+2 is
+3 confused 
+ name= Irbid
+ population= 23
+ growthRate= 0.23%

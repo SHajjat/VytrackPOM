@@ -1,17 +1,16 @@
 package chapter10_IO;
 
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
-public class PrintWriterExample2 {// class to read and write txt files
+public class PrintWriterExample3 {// class to read and write txt files
 	
 	
 	public static void main(String[] args) {
 		String fileName = "out2.txt";
 		PrintWriter outputStream = null;
 		try {
-			outputStream = new PrintWriter(fileName); // it always start with empty file,
+			outputStream = new PrintWriter(new FileOutputStream(fileName, true)); // it always start with empty file,
 			// if you have file with same name it will be cleared
 			//if it doesnt exist a new file will be made
 		} catch (FileNotFoundException e) {
@@ -25,14 +24,10 @@ public class PrintWriterExample2 {// class to read and write txt files
 			
 			
 		}
-		Scanner keyboard = new Scanner(System.in);
-		for ( int count = 1; count <= 3; count++ ) {
-			System.out.println("what you wanna put as line number "+count);
-			String line = keyboard.nextLine();
-			outputStream.println(count+" "+line);
-		}
+		City c1 = new City("Irbid",23,.23);
+		outputStream.println(c1);
 		outputStream.close();
-		System.out.println("those lines were written to "+ fileName);
+		System.out.println("File saved in "+fileName);
 		
 	}
 }
