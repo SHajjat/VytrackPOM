@@ -1,6 +1,6 @@
 package Generics;
 
-public class Main2 {
+public class Main22 {
 	public static void main(String[] args) {
 		FootballPlayer1 joe = new FootballPlayer1("joe");
 		BaseballPlayer1 pat = new BaseballPlayer1("Pat");

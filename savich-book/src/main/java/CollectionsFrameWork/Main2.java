@@ -1,6 +1,6 @@
 package CollectionsFrameWork;
 
-public class Main {
+public class Main2 {
 	public static void main(String[] args) {
 		CollectionsFrameWork.Theatre2 theatre = new CollectionsFrameWork.Theatre2("Olympia",8,12);
 		//theatre.getSeats();

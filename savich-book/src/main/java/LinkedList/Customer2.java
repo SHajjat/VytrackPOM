@@ -2,11 +2,11 @@ package LinkedList;
 
 import java.util.ArrayList;
 
-public class Customer {
+public class Customer2 {
 	private String name;
 	private double balance;
 	
-	public Customer(String name , double balance){
+	public Customer2(String name , double balance){
 		this.balance = balance;
 		this.name = name;
 		

@@ -3,7 +3,7 @@ package chapter10_IO;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class PrintWriterExample {// class to read and write txt files
+public class PrintWriterExample1 {// class to read and write txt files
 	String fileName = "out.csv";
 	PrintWriter outputStream;
 	
@@ -30,7 +30,7 @@ public class PrintWriterExample {// class to read and write txt files
 	}
 	
 	}
-class creater{
+class creater1 {
 	public static void main(String[] args) {
 		PrintWriterExample1 print = new PrintWriterExample1();
 		print.outStream();
